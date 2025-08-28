@@ -1,2 +1,46 @@
 # TreeAnnotator
 Python script to map functional annotation to a phylogenetic tree
+
+Description:  
+This program maps data onto phylogenetic trees, automating the process of tree creation, alignment and design.
+Optional upload to iTOL for advanced visualization and sharing. 
+Streamline the analysis of phylogenetic relationships with an emphasis on customization, visual clarity, and integration with online tools.  
+
+Key Features:  
+- **Input:** Excel file containing sequence information, metadata, and outgroup specifications.  
+- **Output:** A designed phylogenetic tree in multiple formats (PDF, Newick, Nexus, etc.).  
+- **Automated steps:**  
+  1. Generate dictionaries from the Excel table.  
+  2. Perform sequence alignment using MAFFT.  
+  3. Construct a phylogenetic tree using IQ-TREE2.  
+  4. Design the tree with the following features:  
+     - Assign unique colors to each species.  
+     - Root the tree at the specified outgroup.  
+     - Highlight significant differences (bootstrap > 70%) with an asterisk (*).  
+     - Display genus and gene information in the title for context.  
+     - Add all boolean metadata (e.g., morphological traits) as visual markers on the tree.  
+     - Include a legend for metadata visualization.  
+     - Use bold font to emphasize taxa of primary interest.  
+  5. Save the designed tree in the desired output path.  
+  6. Optionally upload the tree to iTOL for online visualization and collaboration.  
+
+Dependencies:  
+To run this program, ensure the following Python packages and software are installed:  
+- **Python 3.8 or higher**  
+- **Required Python packages (install via pip):**  
+  - `pandas`  
+  - `ete3`  
+  - `numpy`  
+  - `matplotlib`  
+  - `itolapi`  
+- **External software:**  
+  - MAFFT (for sequence alignment)  
+  - IQ-TREE2 (for phylogenetic tree construction)  
+
+Usage:  
+1. Prepare an Excel file with the required data (example table provided; formatting must match the example).  
+2. Provide the file paths for the input Excel file, the MAFFT and IQ-TREE executables, and the output folder.  
+3. Run the script and follow the prompts.  
+4. The pipeline will produce an aligned FASTA file, a phylogenetic tree, and a fully designed tree visualization.  
+5. If you have a subscription to iTOL, the pipeline can automatically upload the tree for online access and sharing.  
+
