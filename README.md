@@ -64,8 +64,29 @@ python3 TreeAnnotator.py \
 --out ./stylish_tree/
 
 
+```
+Usage:
+  python3 TreeAnnotator.py --info <INFO_FILE> --tree <TREE_FILE> --out <DIR>
+
+Mandatory:
+  --info     STR      Metadata input file
+  --tree     STR      Tree file
+  --out      STR      Output directory
+
+Optional:
+ 
+```
+
+`--info` full path to the file containing the metadata.
+
+`--tree` full path to the tree input file.
+
+`--out` full path to the output folder. The folder will be created if it does not exist already.
+
+
+
 ## References
-ete3
-matplotlib
-ChatGPT v4
+- Huerta-Cepas J, Serra F, Bork P. ETE 3: Reconstruction, Analysis, and Visualization of Phylogenomic Data. Mol Biol Evol. 2016 Jun;33(6):1635-8. doi: [10.1093/molbev/msw046](https://doi.org/10.1093/molbev/msw046). Epub 2016 Feb 26. PMID: 26921390; PMCID: PMC4868116.
+- J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007.
+- ChatGPT v4
 
