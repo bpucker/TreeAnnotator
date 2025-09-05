@@ -48,21 +48,25 @@ Usage:
 This script allows the automatic coloration of a tree file based on metadata input in a TSV file. Different output formats are supported (PNG, JPEG, PDF).
 
 ## Installing dependencies
+
+```
 pip3 install ete3
 pip3 install PyQt5
 pip3 install matplotlib
+```
 
 OR (if externally managed message appears):
+
+```
 sudo apt install python3-ete3
 sudo apt install python3-matplotlib
 sudo apt install python3-pyqt5
+```
 
-Usage:
-python3 TreeAnnotator.py \
---info metadata.tsv \
---tree newick_tree.treefile \
---out ./stylish_tree/
 
+
+
+## Usage
 
 ```
 Usage:
@@ -82,6 +86,15 @@ Optional:
 `--tree` full path to the tree input file.
 
 `--out` full path to the output folder. The folder will be created if it does not exist already.
+
+## Example:
+
+```
+python3 TreeAnnotator.py \
+--info metadata.tsv \
+--tree newick_tree.treefile \
+--out ./stylish_tree/
+```
 
 
 
