@@ -44,3 +44,28 @@ Usage:
 4. The pipeline will produce an aligned FASTA file, a phylogenetic tree, and a fully designed tree visualization.  
 5. If you have a subscription to iTOL, the pipeline can automatically upload the tree for online access and sharing.  
 
+# TreeAnnotator for CLI
+This script allows the automatic coloration of a tree file based on metadata input in a TSV file. Different output formats are supported (PNG, JPEG, PDF).
+
+## Installing dependencies
+pip3 install ete3
+pip3 install PyQt5
+pip3 install matplotlib
+
+OR (if externally managed message appears):
+sudo apt install python3-ete3
+sudo apt install python3-matplotlib
+sudo apt install python3-pyqt5
+
+Usage:
+python3 TreeAnnotator.py \
+--info metadata.tsv \
+--tree newick_tree.treefile \
+--out ./stylish_tree/
+
+
+## References
+ete3
+matplotlib
+ChatGPT v4
+
