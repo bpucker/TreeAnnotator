@@ -78,6 +78,12 @@ Mandatory:
   --out      STR      Output directory
 
 Optional:
+	--name     STR      Tree name
+	--fontsize INT      Font size of leaf labels
+	--dotsize  INT      Dot size
+	--bgcolors STR      Comma-separated list of colors (in quotation marks)
+	--dotcolors STR      Comma-separated list of colors (in quotation marks)
+Optional:
  
 ```
 
@@ -86,6 +92,18 @@ Optional:
 `--tree` full path to the tree input file.
 
 `--out` full path to the output folder. The folder will be created if it does not exist already.
+
+`--name` specifies the name prefix of the output files.
+
+`--fontsize` specifies the font size of leaf labels. Default: 10.
+
+`--dotsize` specifies the size of dots used to visualize metadata next to leaf labels. Default: 5.
+
+`--bgcolors` specifies the background colors of leaf labels. A list of comma-separated color strings is expected. Quotation marks around the entire string are required to avoid hashtags breaking the inserted command. Default: "#8B5E3C,#4B6F44,#C2B173,#4A5973,#A77651,#71587D,#4A7F94,#925F86,#9FAD6A,#C7A79A,#5B7A74,#B3A3C1,#7C6647,#5C3D3D,#94A397,#6D6A3D,#BBA785,#434F68".
+
+`--dotcolors` specifies the dot colors of leaf labels. A list of comma-separated color strings is expected. Quotation marks around the entire string are required to avoid hashtags breaking the inserted command. Default: "#e6194b,#3cb44b,#ffe119,#4363d8,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabebe,#469990,#e6beff,#9a6324,#800000,#aaffc3,#808000,#ffd8b1,#000075"
+
+
 
 ## Example:
 
