@@ -1,4 +1,4 @@
-# TreeAnnotator
+# TreeAnnotator (interactive)
 Python script to map functional annotation to a phylogenetic tree
 
 Description:  
@@ -83,8 +83,7 @@ Optional:
 	--dotsize  INT      Dot size
 	--bgcolors STR      Comma-separated list of colors (in quotation marks)
 	--dotcolors STR      Comma-separated list of colors (in quotation marks)
-Optional:
- 
+
 ```
 
 `--info` full path to the file containing the metadata.
